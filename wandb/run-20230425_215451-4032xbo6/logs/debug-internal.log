@@ -1,0 +1,56 @@
+2023-04-25 21:54:51,375 INFO    StreamThr :11700 [internal.py:wandb_internal():87] W&B internal server running at pid: 11700, started at: 2023-04-25 21:54:51.375297
+2023-04-25 21:54:51,376 DEBUG   HandlerThread:11700 [handler.py:handle_request():144] handle_request: status
+2023-04-25 21:54:51,377 INFO    WriterThread:11700 [datastore.py:open_for_write():85] open: D:\FEIJIEJIE\yolov5\wandb\run-20230425_215451-4032xbo6\run-4032xbo6.wandb
+2023-04-25 21:54:51,379 DEBUG   SenderThread:11700 [sender.py:send():336] send: header
+2023-04-25 21:54:51,379 DEBUG   SenderThread:11700 [sender.py:send():336] send: run
+2023-04-25 21:54:51,387 INFO    SenderThread:11700 [sender.py:_maybe_setup_resume():722] checking resume status for None/yolo_test/4032xbo6
+2023-04-25 21:54:53,840 DEBUG   HandlerThread:11700 [handler.py:handle_request():144] handle_request: check_version
+2023-04-25 21:54:53,842 INFO    SenderThread:11700 [dir_watcher.py:__init__():219] watching files in: D:\FEIJIEJIE\yolov5\wandb\run-20230425_215451-4032xbo6\files
+2023-04-25 21:54:53,842 INFO    SenderThread:11700 [sender.py:_start_run_threads():1078] run started: 4032xbo6 with start time 1682430891.375297
+2023-04-25 21:54:53,842 DEBUG   SenderThread:11700 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 21:54:53,842 INFO    SenderThread:11700 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 21:54:53,842 DEBUG   SenderThread:11700 [sender.py:send_request():363] send_request: check_version
+2023-04-25 21:54:54,849 INFO    Thread-13 :11700 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_215451-4032xbo6\files\wandb-summary.json
+2023-04-25 21:54:58,853 DEBUG   HandlerThread:11700 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 21:54:58,858 DEBUG   HandlerThread:11700 [handler.py:handle_request():144] handle_request: run_start
+2023-04-25 21:54:58,877 DEBUG   HandlerThread:11700 [system_info.py:__init__():31] System info init
+2023-04-25 21:54:58,877 DEBUG   HandlerThread:11700 [system_info.py:__init__():46] System info init done
+2023-04-25 21:54:58,877 INFO    HandlerThread:11700 [system_monitor.py:start():183] Starting system monitor
+2023-04-25 21:54:58,877 INFO    SystemMonitor:11700 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-04-25 21:54:58,877 INFO    HandlerThread:11700 [system_monitor.py:probe():204] Collecting system info
+2023-04-25 21:54:58,880 INFO    SystemMonitor:11700 [interfaces.py:start():187] Started cpu monitoring
+2023-04-25 21:54:58,881 INFO    SystemMonitor:11700 [interfaces.py:start():187] Started disk monitoring
+2023-04-25 21:54:58,881 INFO    SystemMonitor:11700 [interfaces.py:start():187] Started gpu monitoring
+2023-04-25 21:54:58,884 INFO    SystemMonitor:11700 [interfaces.py:start():187] Started memory monitoring
+2023-04-25 21:54:58,892 INFO    SystemMonitor:11700 [interfaces.py:start():187] Started network monitoring
+2023-04-25 21:54:58,905 DEBUG   HandlerThread:11700 [system_info.py:probe():195] Probing system
+2023-04-25 21:54:58,905 DEBUG   HandlerThread:11700 [git.py:repo():40] git repository is invalid
+2023-04-25 21:54:58,905 DEBUG   HandlerThread:11700 [system_info.py:probe():240] Probing system done
+2023-04-25 21:54:58,905 DEBUG   HandlerThread:11700 [system_monitor.py:probe():213] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.8.16', 'heartbeatAt': '2023-04-25T13:54:58.905577', 'startedAt': '2023-04-25T13:54:51.368017', 'docker': None, 'cuda': None, 'args': ('--data', '.\\data\\coco128_w2y.yaml', '--cfg', '.\\models\\yolov5n_w2y.yaml', '--weights', '.\\weights\\yolov5n.pt', '--batch-size', '20', '--epochs', '120', '--workers', '4', '--name', 'base_n', '--project', 'yolo_test'), 'state': 'running', 'program': '.\\train.py', 'codePath': 'train.py', 'host': 'C21', 'username': 'w2y', 'executable': 'D:\\Miniconda3\\envs\\torch_gpu\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3501.0, 'min': 0.0, 'max': 3501.0}, 'cpu_freq_per_core': [{'current': 3501.0, 'min': 0.0, 'max': 3501.0}], 'disk': {'total': 265.75976181030273, 'used': 52.45499801635742}, 'gpu': 'NVIDIA GeForce RTX 3070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3070', 'memory_total': 8589934592}], 'memory': {'total': 15.927337646484375}}
+2023-04-25 21:54:58,906 INFO    HandlerThread:11700 [system_monitor.py:probe():214] Finished collecting system info
+2023-04-25 21:54:58,906 INFO    HandlerThread:11700 [system_monitor.py:probe():217] Publishing system info
+2023-04-25 21:54:58,906 DEBUG   HandlerThread:11700 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-04-25 21:54:58,906 DEBUG   HandlerThread:11700 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-25 21:54:58,906 DEBUG   HandlerThread:11700 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-04-25 21:54:59,441 DEBUG   HandlerThread:11700 [system_info.py:_save_conda():86] Saving conda packages done
+2023-04-25 21:54:59,442 INFO    HandlerThread:11700 [system_monitor.py:probe():219] Finished publishing system info
+2023-04-25 21:54:59,450 DEBUG   SenderThread:11700 [sender.py:send():336] send: files
+2023-04-25 21:54:59,450 INFO    SenderThread:11700 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-04-25 21:54:59,455 DEBUG   HandlerThread:11700 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 21:54:59,455 DEBUG   SenderThread:11700 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 21:54:59,907 INFO    Thread-13 :11700 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_215451-4032xbo6\files\requirements.txt
+2023-04-25 21:54:59,907 INFO    Thread-13 :11700 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_215451-4032xbo6\files\conda-environment.yaml
+2023-04-25 21:54:59,908 INFO    Thread-13 :11700 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_215451-4032xbo6\files\wandb-metadata.json
+2023-04-25 21:55:00,914 DEBUG   SenderThread:11700 [sender.py:send():336] send: telemetry
+2023-04-25 21:55:00,915 INFO    Thread-13 :11700 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_215451-4032xbo6\files\output.log
+2023-04-25 21:55:00,972 INFO    wandb-upload_0:11700 [upload_job.py:push():138] Uploaded file C:\Users\w2y\AppData\Local\Temp\tmpb2ppa2n3wandb\89sv6wz5-wandb-metadata.json
+2023-04-25 21:55:02,962 INFO    Thread-13 :11700 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_215451-4032xbo6\files\output.log
+2023-04-25 21:55:04,822 DEBUG   HandlerThread:11700 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 21:55:09,007 INFO    Thread-13 :11700 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_215451-4032xbo6\files\output.log
+2023-04-25 21:55:09,885 DEBUG   HandlerThread:11700 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 21:55:14,458 DEBUG   HandlerThread:11700 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 21:55:14,459 DEBUG   SenderThread:11700 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 21:55:15,246 DEBUG   HandlerThread:11700 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 21:55:20,296 DEBUG   HandlerThread:11700 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 21:55:25,342 DEBUG   HandlerThread:11700 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 21:55:27,133 INFO    Thread-13 :11700 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_215451-4032xbo6\files\config.yaml

@@ -1,0 +1,667 @@
+2023-04-25 19:42:53,261 INFO    StreamThr :1784 [internal.py:wandb_internal():87] W&B internal server running at pid: 1784, started at: 2023-04-25 19:42:53.260153
+2023-04-25 19:42:53,262 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status
+2023-04-25 19:42:53,272 INFO    WriterThread:1784 [datastore.py:open_for_write():85] open: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\run-y2g20nzg.wandb
+2023-04-25 19:42:53,273 DEBUG   SenderThread:1784 [sender.py:send():336] send: header
+2023-04-25 19:42:53,273 DEBUG   SenderThread:1784 [sender.py:send():336] send: run
+2023-04-25 19:42:53,281 INFO    SenderThread:1784 [sender.py:_maybe_setup_resume():722] checking resume status for None/yolo_test/y2g20nzg
+2023-04-25 19:42:54,933 INFO    SenderThread:1784 [dir_watcher.py:__init__():219] watching files in: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files
+2023-04-25 19:42:54,933 INFO    SenderThread:1784 [sender.py:_start_run_threads():1078] run started: y2g20nzg with start time 1682422973.260153
+2023-04-25 19:42:54,937 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:42:54,937 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:42:54,941 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: check_version
+2023-04-25 19:42:54,942 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: check_version
+2023-04-25 19:42:55,942 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\wandb-summary.json
+2023-04-25 19:42:59,946 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:42:59,951 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: run_start
+2023-04-25 19:42:59,971 DEBUG   HandlerThread:1784 [system_info.py:__init__():31] System info init
+2023-04-25 19:42:59,971 DEBUG   HandlerThread:1784 [system_info.py:__init__():46] System info init done
+2023-04-25 19:42:59,971 INFO    HandlerThread:1784 [system_monitor.py:start():183] Starting system monitor
+2023-04-25 19:42:59,971 INFO    SystemMonitor:1784 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-04-25 19:42:59,971 INFO    HandlerThread:1784 [system_monitor.py:probe():204] Collecting system info
+2023-04-25 19:42:59,974 INFO    SystemMonitor:1784 [interfaces.py:start():187] Started cpu monitoring
+2023-04-25 19:42:59,975 INFO    SystemMonitor:1784 [interfaces.py:start():187] Started disk monitoring
+2023-04-25 19:42:59,975 INFO    SystemMonitor:1784 [interfaces.py:start():187] Started gpu monitoring
+2023-04-25 19:42:59,979 INFO    SystemMonitor:1784 [interfaces.py:start():187] Started memory monitoring
+2023-04-25 19:42:59,986 INFO    SystemMonitor:1784 [interfaces.py:start():187] Started network monitoring
+2023-04-25 19:42:59,999 DEBUG   HandlerThread:1784 [system_info.py:probe():195] Probing system
+2023-04-25 19:42:59,999 DEBUG   HandlerThread:1784 [git.py:repo():40] git repository is invalid
+2023-04-25 19:42:59,999 DEBUG   HandlerThread:1784 [system_info.py:probe():240] Probing system done
+2023-04-25 19:42:59,999 DEBUG   HandlerThread:1784 [system_monitor.py:probe():213] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.8.16', 'heartbeatAt': '2023-04-25T11:42:59.999049', 'startedAt': '2023-04-25T11:42:53.252814', 'docker': None, 'cuda': None, 'args': ('--data', '.\\data\\coco128_w2y.yaml', '--cfg', '.\\models\\yolov5n_w2y.yaml', '--weights', '.\\weights\\yolov5n.pt', '--batch-size', '8', '--epochs', '100', '--workers', '0', '--name', 'fjj_v5n', '--project', 'yolo_test'), 'state': 'running', 'program': '.\\train.py', 'codePath': 'train.py', 'host': 'C21', 'username': 'w2y', 'executable': 'D:\\Miniconda3\\envs\\torch_gpu\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3501.0, 'min': 0.0, 'max': 3501.0}, 'cpu_freq_per_core': [{'current': 3501.0, 'min': 0.0, 'max': 3501.0}], 'disk': {'total': 265.75976181030273, 'used': 51.58928680419922}, 'gpu': 'NVIDIA GeForce RTX 3070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3070', 'memory_total': 8589934592}], 'memory': {'total': 15.927337646484375}}
+2023-04-25 19:42:59,999 INFO    HandlerThread:1784 [system_monitor.py:probe():214] Finished collecting system info
+2023-04-25 19:42:59,999 INFO    HandlerThread:1784 [system_monitor.py:probe():217] Publishing system info
+2023-04-25 19:42:59,999 DEBUG   HandlerThread:1784 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-04-25 19:43:00,000 DEBUG   HandlerThread:1784 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-25 19:43:00,000 DEBUG   HandlerThread:1784 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-04-25 19:43:00,534 DEBUG   HandlerThread:1784 [system_info.py:_save_conda():86] Saving conda packages done
+2023-04-25 19:43:00,534 INFO    HandlerThread:1784 [system_monitor.py:probe():219] Finished publishing system info
+2023-04-25 19:43:00,543 DEBUG   SenderThread:1784 [sender.py:send():336] send: files
+2023-04-25 19:43:00,543 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-04-25 19:43:00,549 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:43:00,551 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:43:00,933 DEBUG   SenderThread:1784 [sender.py:send():336] send: telemetry
+2023-04-25 19:43:00,987 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\wandb-metadata.json
+2023-04-25 19:43:00,988 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\requirements.txt
+2023-04-25 19:43:00,988 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\conda-environment.yaml
+2023-04-25 19:43:00,988 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:01,764 INFO    wandb-upload_0:1784 [upload_job.py:push():138] Uploaded file C:\Users\w2y\AppData\Local\Temp\tmpz0cok7gcwandb\gaddsnxn-wandb-metadata.json
+2023-04-25 19:43:03,003 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:05,014 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:43:05,030 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:10,626 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:43:11,074 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:15,555 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:43:15,556 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:43:15,928 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:43:17,120 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:19,138 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:21,051 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:43:21,161 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:23,178 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:25,192 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:26,108 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:43:27,207 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\config.yaml
+2023-04-25 19:43:27,208 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:29,221 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:30,581 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:43:30,582 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:43:31,237 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:31,785 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:43:33,251 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:35,266 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:36,891 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:43:37,280 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:39,298 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:41,309 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:41,905 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:43:43,324 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:45,339 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:45,594 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:43:45,594 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:43:47,354 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:48,529 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:43:48,568 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:43:48,568 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:43:48,568 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:43:48,569 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:43:48,569 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:43:48,569 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:43:48,569 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:43:48,569 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:43:48,570 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:43:48,570 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:43:48,570 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:43:48,570 DEBUG   SenderThread:1784 [sender.py:send():336] send: files
+2023-04-25 19:43:48,570 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file media\images\Labels_0_be9fd2a0cd31c58a9032.jpg with policy now
+2023-04-25 19:43:48,571 DEBUG   SenderThread:1784 [sender.py:send():336] send: files
+2023-04-25 19:43:48,571 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file media\images\Labels_0_711f8ca66345ec4a98dd.jpg with policy now
+2023-04-25 19:43:48,571 DEBUG   SenderThread:1784 [sender.py:send():336] send: files
+2023-04-25 19:43:48,571 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file media\images\Mosaics_0_b72a3d833cbc210cb530.jpg with policy now
+2023-04-25 19:43:48,572 DEBUG   SenderThread:1784 [sender.py:send():336] send: files
+2023-04-25 19:43:48,572 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file media\images\Mosaics_0_f02d63b0084c2d5c5f0a.jpg with policy now
+2023-04-25 19:43:48,572 DEBUG   SenderThread:1784 [sender.py:send():336] send: files
+2023-04-25 19:43:48,572 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file media\images\Mosaics_0_d3545c915509632cd7f9.jpg with policy now
+2023-04-25 19:43:48,572 DEBUG   SenderThread:1784 [sender.py:send():336] send: history
+2023-04-25 19:43:48,573 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:43:48,576 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:43:49,363 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:49,363 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\wandb-summary.json
+2023-04-25 19:43:49,364 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\media\images\Labels_0_be9fd2a0cd31c58a9032.jpg
+2023-04-25 19:43:49,364 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\media\images\Mosaics_0_f02d63b0084c2d5c5f0a.jpg
+2023-04-25 19:43:49,364 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\media\images\Mosaics_0_d3545c915509632cd7f9.jpg
+2023-04-25 19:43:49,364 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\media\images\Mosaics_0_b72a3d833cbc210cb530.jpg
+2023-04-25 19:43:49,365 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\media\images\Labels_0_711f8ca66345ec4a98dd.jpg
+2023-04-25 19:43:49,365 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\media
+2023-04-25 19:43:49,365 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\media\images
+2023-04-25 19:43:49,964 INFO    wandb-upload_3:1784 [upload_job.py:push():138] Uploaded file C:\Users\w2y\AppData\Local\Temp\tmpz0cok7gcwandb\xg7r2lks-media/images/Mosaics_0_f02d63b0084c2d5c5f0a.jpg
+2023-04-25 19:43:50,218 INFO    wandb-upload_4:1784 [upload_job.py:push():138] Uploaded file C:\Users\w2y\AppData\Local\Temp\tmpz0cok7gcwandb\leeb1zfi-media/images/Mosaics_0_d3545c915509632cd7f9.jpg
+2023-04-25 19:43:50,360 INFO    wandb-upload_0:1784 [upload_job.py:push():138] Uploaded file C:\Users\w2y\AppData\Local\Temp\tmpz0cok7gcwandb\f3u7pgij-media/images/Labels_0_be9fd2a0cd31c58a9032.jpg
+2023-04-25 19:43:50,640 INFO    wandb-upload_2:1784 [upload_job.py:push():138] Uploaded file C:\Users\w2y\AppData\Local\Temp\tmpz0cok7gcwandb\8t088hua-media/images/Mosaics_0_b72a3d833cbc210cb530.jpg
+2023-04-25 19:43:51,040 INFO    wandb-upload_1:1784 [upload_job.py:push():138] Uploaded file C:\Users\w2y\AppData\Local\Temp\tmpz0cok7gcwandb\hxfqyu7h-media/images/Labels_0_711f8ca66345ec4a98dd.jpg
+2023-04-25 19:43:51,373 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:53,387 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:53,621 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:43:55,402 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:57,417 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:58,761 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:43:59,433 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:43:59,992 DEBUG   SystemMonitor:1784 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-04-25 19:43:59,993 DEBUG   SenderThread:1784 [sender.py:send():336] send: stats
+2023-04-25 19:44:00,615 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:44:00,615 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:44:01,448 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:03,464 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:03,908 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:44:05,477 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:07,491 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:08,919 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:44:09,506 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:11,519 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:13,535 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:14,015 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:44:14,252 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:44:14,253 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:44:14,254 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:44:14,254 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:44:14,254 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:44:14,255 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:44:14,255 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:44:14,255 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:44:14,255 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:44:14,256 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:44:14,256 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:44:14,256 DEBUG   SenderThread:1784 [sender.py:send():336] send: history
+2023-04-25 19:44:14,256 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:44:14,257 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:44:14,544 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\wandb-summary.json
+2023-04-25 19:44:15,551 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:15,631 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:44:15,632 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:44:17,564 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:19,130 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:44:19,579 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:21,595 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:23,609 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:24,205 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:44:25,622 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:27,638 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:29,334 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:44:29,654 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:30,006 DEBUG   SenderThread:1784 [sender.py:send():336] send: stats
+2023-04-25 19:44:30,630 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:44:30,630 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:44:31,669 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:33,683 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:34,421 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:44:35,698 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:37,712 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:39,527 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:44:39,726 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:39,745 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:44:39,746 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:44:39,747 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:44:39,747 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:44:39,748 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:44:39,748 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:44:39,748 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:44:39,749 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:44:39,749 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:44:39,749 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:44:39,749 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:44:39,750 DEBUG   SenderThread:1784 [sender.py:send():336] send: history
+2023-04-25 19:44:39,750 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:44:39,750 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:44:40,732 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\wandb-summary.json
+2023-04-25 19:44:41,741 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:43,756 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:44,541 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:44:45,630 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:44:45,630 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:44:45,774 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:47,789 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:49,615 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:44:49,804 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:51,819 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:53,835 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:54,765 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:44:55,851 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:57,862 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:59,878 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:44:59,901 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:45:00,007 DEBUG   SenderThread:1784 [sender.py:send():336] send: stats
+2023-04-25 19:45:00,630 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:45:00,630 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:45:01,894 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:03,909 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:04,939 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:45:05,159 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:05,160 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:45:05,161 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:05,161 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:05,162 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:05,162 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:05,162 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:05,163 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:05,163 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:05,163 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:05,163 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:05,164 DEBUG   SenderThread:1784 [sender.py:send():336] send: history
+2023-04-25 19:45:05,164 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:05,164 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:05,926 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:05,927 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\wandb-summary.json
+2023-04-25 19:45:07,944 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:09,963 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:10,048 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:45:11,979 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:13,996 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:15,122 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:45:15,627 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:45:15,627 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:45:16,012 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:18,026 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:20,041 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:20,264 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:45:22,060 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:24,072 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:25,363 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:45:26,088 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:28,101 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:30,021 DEBUG   SenderThread:1784 [sender.py:send():336] send: stats
+2023-04-25 19:45:30,118 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:30,436 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:45:30,646 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:45:30,646 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:45:30,662 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:45:31,023 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:31,023 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:31,024 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:31,024 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:31,024 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:31,025 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:31,025 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:31,025 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:31,025 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:31,026 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:31,026 DEBUG   SenderThread:1784 [sender.py:send():336] send: history
+2023-04-25 19:45:31,026 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:31,026 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:31,126 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\wandb-summary.json
+2023-04-25 19:45:32,131 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:34,149 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:35,547 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:45:36,162 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:38,179 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:40,191 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:40,618 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:45:42,207 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:44,221 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:45,662 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:45:45,663 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:45:45,663 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:45:46,238 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:48,256 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:50,272 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:50,697 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:45:52,286 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:54,300 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:55,824 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:45:56,062 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:56,064 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:45:56,064 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:56,065 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:56,065 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:56,065 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:56,066 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:56,066 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:56,066 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:56,067 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:56,067 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:56,067 DEBUG   SenderThread:1784 [sender.py:send():336] send: history
+2023-04-25 19:45:56,067 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:45:56,068 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:45:56,315 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:45:56,316 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\wandb-summary.json
+2023-04-25 19:45:58,331 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:00,026 DEBUG   SenderThread:1784 [sender.py:send():336] send: stats
+2023-04-25 19:46:00,346 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:00,650 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:46:00,650 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:46:01,020 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:46:02,364 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:04,380 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:06,127 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:46:06,394 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:08,409 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:10,425 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:11,237 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:46:12,439 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:14,458 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:15,669 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:46:15,669 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:46:16,351 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:46:16,469 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:18,486 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:20,501 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:21,363 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:46:21,718 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:46:21,719 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:46:21,719 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:46:21,720 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:46:21,720 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:46:21,720 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:46:21,721 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:46:21,721 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:46:21,721 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:46:21,721 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:46:21,722 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:46:21,722 DEBUG   SenderThread:1784 [sender.py:send():336] send: history
+2023-04-25 19:46:21,722 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:46:21,722 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:46:22,517 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:22,517 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\wandb-summary.json
+2023-04-25 19:46:24,530 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:26,542 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:26,548 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:46:28,559 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:30,030 DEBUG   SenderThread:1784 [sender.py:send():336] send: stats
+2023-04-25 19:46:30,574 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:30,685 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:46:30,685 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:46:31,601 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:46:32,588 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:34,606 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:36,622 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:36,714 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:46:38,637 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:40,652 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:41,776 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:46:42,667 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:44,683 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:45,688 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:46:45,688 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:46:46,695 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:46,865 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:46:47,258 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:46:47,259 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:46:47,260 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:46:47,260 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:46:47,261 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:46:47,261 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:46:47,261 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:46:47,261 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:46:47,262 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:46:47,262 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:46:47,262 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:46:47,262 DEBUG   SenderThread:1784 [sender.py:send():336] send: history
+2023-04-25 19:46:47,263 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:46:47,263 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:46:47,703 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\wandb-summary.json
+2023-04-25 19:46:48,711 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:50,726 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:51,976 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:46:52,742 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:54,757 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:56,772 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:46:57,129 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:46:58,789 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:00,037 DEBUG   SenderThread:1784 [sender.py:send():336] send: stats
+2023-04-25 19:47:00,691 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:47:00,692 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:47:00,803 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:02,260 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:47:02,821 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:04,835 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:06,851 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:07,421 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:47:08,865 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:10,881 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:12,492 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:47:12,895 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:13,016 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:47:13,018 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:47:13,018 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:47:13,019 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:47:13,019 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:47:13,019 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:47:13,020 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:47:13,020 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:47:13,020 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:47:13,021 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:47:13,021 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:47:13,021 DEBUG   SenderThread:1784 [sender.py:send():336] send: history
+2023-04-25 19:47:13,022 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:47:13,022 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:47:13,901 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\wandb-summary.json
+2023-04-25 19:47:14,910 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:15,691 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:47:15,691 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:47:16,923 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:17,506 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:47:18,937 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:20,952 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:22,562 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:47:22,968 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:24,982 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:26,999 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:27,695 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:47:29,013 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:30,051 DEBUG   SenderThread:1784 [sender.py:send():336] send: stats
+2023-04-25 19:47:30,691 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:47:30,691 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:47:31,026 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:32,766 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:47:33,042 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:35,059 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:37,071 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:37,825 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:47:38,741 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:47:38,742 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:47:38,742 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:47:38,743 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:47:38,743 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:47:38,743 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:47:38,744 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:47:38,744 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:47:38,744 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:47:38,744 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:47:38,745 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:47:38,745 DEBUG   SenderThread:1784 [sender.py:send():336] send: history
+2023-04-25 19:47:38,745 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 19:47:38,745 INFO    SenderThread:1784 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 19:47:39,084 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:39,084 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\wandb-summary.json
+2023-04-25 19:47:41,096 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:42,826 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 19:47:43,126 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:45,145 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:45,687 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 19:47:45,687 DEBUG   SenderThread:1784 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 19:47:46,281 WARNING FileStreamThread:1784 [file_stream.py:request_with_retry():670] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/w2y/yolo_test/y2g20nzg/file_stream (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))). func: <bound method Session.post of <requests.sessions.Session object at 0x000001EC0CCCA940>>, args: ('https://api.wandb.ai/files/w2y/yolo_test/y2g20nzg/file_stream',), kwargs: {'json': {'files': {'wandb-summary.json': {'offset': 0, 'content': ['{"best/epoch": 9, "best/precision": 0.2887204822688693, "best/recall": 0.37815126050420167, "best/mAP_0.5": 0.1825182716236059, "best/mAP_0.5:0.95": 0.05660377005368152, "Labels": {"_type": "images/separated", "width": 1600, "height": 1600, "format": "jpg", "count": 2, "filenames": ["media/images/Labels_0_be9fd2a0cd31c58a9032.jpg", "media/images/Labels_0_711f8ca66345ec4a98dd.jpg"], "captions": ["labels.jpg", "labels_correlogram.jpg"]}, "Mosaics": {"_type": "images/separated", "width": 1920, "height": 1920, "format": "jpg", "count": 3, "filenames": ["media/images/Mosaics_0_b72a3d833cbc210cb530.jpg", "media/images/Mosaics_0_f02d63b0084c2d5c5f0a.jpg", "media/images/Mosaics_0_d3545c915509632cd7f9.jpg"], "captions": ["train_batch0.jpg", "train_batch1.jpg", "train_batch2.jpg"]}, "train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'wandb-history.jsonl': {'offset': 9, 'content': ['{"train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'output.log': {'offset': 81, 'content': ['ERROR 2023-04-25T11:47:38.715815        9/99      1.11G    0.04901   0.006177          0          7        640: 100%|██████████| 119/119 [00:24<00:00,  4.91it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                  Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 8/8 [00:01<00:00,  6.61it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                    all        119        119      0.289      0.378      0.183     0.0566\n', 'ERROR 2023-04-25T11:47:40.731648       Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size\n', 'ERROR 2023-04-25T11:47:44.750799       10/99      1.11G      0.051    0.00633          0         10        640:  22%|██▏       | 26/119 [00:05<00:18,  5.14it/s]\n']}}, 'dropped': 0}}
+2023-04-25 19:47:47,152 INFO    Thread-13 :1784 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_194253-y2g20nzg\files\output.log
+2023-04-25 19:47:48,583 WARNING FileStreamThread:1784 [file_stream.py:request_with_retry():670] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/w2y/yolo_test/y2g20nzg/file_stream (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))). func: <bound method Session.post of <requests.sessions.Session object at 0x000001EC0CCCA940>>, args: ('https://api.wandb.ai/files/w2y/yolo_test/y2g20nzg/file_stream',), kwargs: {'json': {'files': {'wandb-summary.json': {'offset': 0, 'content': ['{"best/epoch": 9, "best/precision": 0.2887204822688693, "best/recall": 0.37815126050420167, "best/mAP_0.5": 0.1825182716236059, "best/mAP_0.5:0.95": 0.05660377005368152, "Labels": {"_type": "images/separated", "width": 1600, "height": 1600, "format": "jpg", "count": 2, "filenames": ["media/images/Labels_0_be9fd2a0cd31c58a9032.jpg", "media/images/Labels_0_711f8ca66345ec4a98dd.jpg"], "captions": ["labels.jpg", "labels_correlogram.jpg"]}, "Mosaics": {"_type": "images/separated", "width": 1920, "height": 1920, "format": "jpg", "count": 3, "filenames": ["media/images/Mosaics_0_b72a3d833cbc210cb530.jpg", "media/images/Mosaics_0_f02d63b0084c2d5c5f0a.jpg", "media/images/Mosaics_0_d3545c915509632cd7f9.jpg"], "captions": ["train_batch0.jpg", "train_batch1.jpg", "train_batch2.jpg"]}, "train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'wandb-history.jsonl': {'offset': 9, 'content': ['{"train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'output.log': {'offset': 81, 'content': ['ERROR 2023-04-25T11:47:38.715815        9/99      1.11G    0.04901   0.006177          0          7        640: 100%|██████████| 119/119 [00:24<00:00,  4.91it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                  Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 8/8 [00:01<00:00,  6.61it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                    all        119        119      0.289      0.378      0.183     0.0566\n', 'ERROR 2023-04-25T11:47:40.731648       Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size\n', 'ERROR 2023-04-25T11:47:44.750799       10/99      1.11G      0.051    0.00633          0         10        640:  22%|██▏       | 26/119 [00:05<00:18,  5.14it/s]\n']}}, 'dropped': 0}}
+2023-04-25 19:47:49,630 INFO    SenderThread:1784 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connection.py", line 369, in connect
+    self.sock = conn = self._connect_tls_proxy(hostname, conn)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connection.py", line 504, in _connect_tls_proxy
+    socket = ssl_wrap_socket(
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\util\ssl_.py", line 453, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\util\ssl_.py", line 495, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock)
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1131)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\sdk\internal\internal_api.py", line 243, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\transport\requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\adapters.py", line 563, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+2023-04-25 19:47:51,716 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:47:52,949 WARNING FileStreamThread:1784 [file_stream.py:request_with_retry():670] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/w2y/yolo_test/y2g20nzg/file_stream (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))). func: <bound method Session.post of <requests.sessions.Session object at 0x000001EC0CCCA940>>, args: ('https://api.wandb.ai/files/w2y/yolo_test/y2g20nzg/file_stream',), kwargs: {'json': {'files': {'wandb-summary.json': {'offset': 0, 'content': ['{"best/epoch": 9, "best/precision": 0.2887204822688693, "best/recall": 0.37815126050420167, "best/mAP_0.5": 0.1825182716236059, "best/mAP_0.5:0.95": 0.05660377005368152, "Labels": {"_type": "images/separated", "width": 1600, "height": 1600, "format": "jpg", "count": 2, "filenames": ["media/images/Labels_0_be9fd2a0cd31c58a9032.jpg", "media/images/Labels_0_711f8ca66345ec4a98dd.jpg"], "captions": ["labels.jpg", "labels_correlogram.jpg"]}, "Mosaics": {"_type": "images/separated", "width": 1920, "height": 1920, "format": "jpg", "count": 3, "filenames": ["media/images/Mosaics_0_b72a3d833cbc210cb530.jpg", "media/images/Mosaics_0_f02d63b0084c2d5c5f0a.jpg", "media/images/Mosaics_0_d3545c915509632cd7f9.jpg"], "captions": ["train_batch0.jpg", "train_batch1.jpg", "train_batch2.jpg"]}, "train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'wandb-history.jsonl': {'offset': 9, 'content': ['{"train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'output.log': {'offset': 81, 'content': ['ERROR 2023-04-25T11:47:38.715815        9/99      1.11G    0.04901   0.006177          0          7        640: 100%|██████████| 119/119 [00:24<00:00,  4.91it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                  Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 8/8 [00:01<00:00,  6.61it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                    all        119        119      0.289      0.378      0.183     0.0566\n', 'ERROR 2023-04-25T11:47:40.731648       Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size\n', 'ERROR 2023-04-25T11:47:44.750799       10/99      1.11G      0.051    0.00633          0         10        640:  22%|██▏       | 26/119 [00:05<00:18,  5.14it/s]\n']}}, 'dropped': 0}}
+2023-04-25 19:47:56,750 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:48:01,751 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:48:02,766 WARNING FileStreamThread:1784 [file_stream.py:request_with_retry():670] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/w2y/yolo_test/y2g20nzg/file_stream (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))). func: <bound method Session.post of <requests.sessions.Session object at 0x000001EC0CCCA940>>, args: ('https://api.wandb.ai/files/w2y/yolo_test/y2g20nzg/file_stream',), kwargs: {'json': {'files': {'wandb-summary.json': {'offset': 0, 'content': ['{"best/epoch": 9, "best/precision": 0.2887204822688693, "best/recall": 0.37815126050420167, "best/mAP_0.5": 0.1825182716236059, "best/mAP_0.5:0.95": 0.05660377005368152, "Labels": {"_type": "images/separated", "width": 1600, "height": 1600, "format": "jpg", "count": 2, "filenames": ["media/images/Labels_0_be9fd2a0cd31c58a9032.jpg", "media/images/Labels_0_711f8ca66345ec4a98dd.jpg"], "captions": ["labels.jpg", "labels_correlogram.jpg"]}, "Mosaics": {"_type": "images/separated", "width": 1920, "height": 1920, "format": "jpg", "count": 3, "filenames": ["media/images/Mosaics_0_b72a3d833cbc210cb530.jpg", "media/images/Mosaics_0_f02d63b0084c2d5c5f0a.jpg", "media/images/Mosaics_0_d3545c915509632cd7f9.jpg"], "captions": ["train_batch0.jpg", "train_batch1.jpg", "train_batch2.jpg"]}, "train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'wandb-history.jsonl': {'offset': 9, 'content': ['{"train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'output.log': {'offset': 81, 'content': ['ERROR 2023-04-25T11:47:38.715815        9/99      1.11G    0.04901   0.006177          0          7        640: 100%|██████████| 119/119 [00:24<00:00,  4.91it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                  Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 8/8 [00:01<00:00,  6.61it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                    all        119        119      0.289      0.378      0.183     0.0566\n', 'ERROR 2023-04-25T11:47:40.731648       Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size\n', 'ERROR 2023-04-25T11:47:44.750799       10/99      1.11G      0.051    0.00633          0         10        640:  22%|██▏       | 26/119 [00:05<00:18,  5.14it/s]\n']}}, 'dropped': 0}}
+2023-04-25 19:48:04,686 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:48:06,794 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:48:11,812 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:48:16,836 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:48:19,530 WARNING FileStreamThread:1784 [file_stream.py:request_with_retry():670] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/w2y/yolo_test/y2g20nzg/file_stream (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))). func: <bound method Session.post of <requests.sessions.Session object at 0x000001EC0CCCA940>>, args: ('https://api.wandb.ai/files/w2y/yolo_test/y2g20nzg/file_stream',), kwargs: {'json': {'files': {'wandb-summary.json': {'offset': 0, 'content': ['{"best/epoch": 9, "best/precision": 0.2887204822688693, "best/recall": 0.37815126050420167, "best/mAP_0.5": 0.1825182716236059, "best/mAP_0.5:0.95": 0.05660377005368152, "Labels": {"_type": "images/separated", "width": 1600, "height": 1600, "format": "jpg", "count": 2, "filenames": ["media/images/Labels_0_be9fd2a0cd31c58a9032.jpg", "media/images/Labels_0_711f8ca66345ec4a98dd.jpg"], "captions": ["labels.jpg", "labels_correlogram.jpg"]}, "Mosaics": {"_type": "images/separated", "width": 1920, "height": 1920, "format": "jpg", "count": 3, "filenames": ["media/images/Mosaics_0_b72a3d833cbc210cb530.jpg", "media/images/Mosaics_0_f02d63b0084c2d5c5f0a.jpg", "media/images/Mosaics_0_d3545c915509632cd7f9.jpg"], "captions": ["train_batch0.jpg", "train_batch1.jpg", "train_batch2.jpg"]}, "train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'wandb-history.jsonl': {'offset': 9, 'content': ['{"train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'output.log': {'offset': 81, 'content': ['ERROR 2023-04-25T11:47:38.715815        9/99      1.11G    0.04901   0.006177          0          7        640: 100%|██████████| 119/119 [00:24<00:00,  4.91it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                  Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 8/8 [00:01<00:00,  6.61it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                    all        119        119      0.289      0.378      0.183     0.0566\n', 'ERROR 2023-04-25T11:47:40.731648       Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size\n', 'ERROR 2023-04-25T11:47:44.750799       10/99      1.11G      0.051    0.00633          0         10        640:  22%|██▏       | 26/119 [00:05<00:18,  5.14it/s]\n']}}, 'dropped': 0}}
+2023-04-25 19:48:21,899 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:48:26,922 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:48:30,399 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:48:31,952 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:48:36,976 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:48:41,998 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:48:47,019 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:48:52,066 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:48:55,751 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:48:57,101 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:48:58,840 WARNING FileStreamThread:1784 [file_stream.py:request_with_retry():670] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/w2y/yolo_test/y2g20nzg/file_stream (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))). func: <bound method Session.post of <requests.sessions.Session object at 0x000001EC0CCCA940>>, args: ('https://api.wandb.ai/files/w2y/yolo_test/y2g20nzg/file_stream',), kwargs: {'json': {'files': {'wandb-summary.json': {'offset': 0, 'content': ['{"best/epoch": 9, "best/precision": 0.2887204822688693, "best/recall": 0.37815126050420167, "best/mAP_0.5": 0.1825182716236059, "best/mAP_0.5:0.95": 0.05660377005368152, "Labels": {"_type": "images/separated", "width": 1600, "height": 1600, "format": "jpg", "count": 2, "filenames": ["media/images/Labels_0_be9fd2a0cd31c58a9032.jpg", "media/images/Labels_0_711f8ca66345ec4a98dd.jpg"], "captions": ["labels.jpg", "labels_correlogram.jpg"]}, "Mosaics": {"_type": "images/separated", "width": 1920, "height": 1920, "format": "jpg", "count": 3, "filenames": ["media/images/Mosaics_0_b72a3d833cbc210cb530.jpg", "media/images/Mosaics_0_f02d63b0084c2d5c5f0a.jpg", "media/images/Mosaics_0_d3545c915509632cd7f9.jpg"], "captions": ["train_batch0.jpg", "train_batch1.jpg", "train_batch2.jpg"]}, "train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'wandb-history.jsonl': {'offset': 9, 'content': ['{"train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'output.log': {'offset': 81, 'content': ['ERROR 2023-04-25T11:47:38.715815        9/99      1.11G    0.04901   0.006177          0          7        640: 100%|██████████| 119/119 [00:24<00:00,  4.91it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                  Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 8/8 [00:01<00:00,  6.61it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                    all        119        119      0.289      0.378      0.183     0.0566\n', 'ERROR 2023-04-25T11:47:40.731648       Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size\n', 'ERROR 2023-04-25T11:47:44.750799       10/99      1.11G      0.051    0.00633          0         10        640:  22%|██▏       | 26/119 [00:05<00:18,  5.14it/s]\n']}}, 'dropped': 0}}
+2023-04-25 19:49:02,132 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:49:07,156 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:49:12,185 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:49:17,210 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:49:20,965 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:49:22,236 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:49:27,263 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:49:32,303 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:49:37,330 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:49:42,351 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:49:46,155 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:49:47,371 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:49:52,395 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:49:57,424 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:50:02,470 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:50:07,501 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:50:11,325 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:50:12,535 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:50:15,632 WARNING FileStreamThread:1784 [file_stream.py:request_with_retry():670] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/w2y/yolo_test/y2g20nzg/file_stream (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))). func: <bound method Session.post of <requests.sessions.Session object at 0x000001EC0CCCA940>>, args: ('https://api.wandb.ai/files/w2y/yolo_test/y2g20nzg/file_stream',), kwargs: {'json': {'files': {'wandb-summary.json': {'offset': 0, 'content': ['{"best/epoch": 9, "best/precision": 0.2887204822688693, "best/recall": 0.37815126050420167, "best/mAP_0.5": 0.1825182716236059, "best/mAP_0.5:0.95": 0.05660377005368152, "Labels": {"_type": "images/separated", "width": 1600, "height": 1600, "format": "jpg", "count": 2, "filenames": ["media/images/Labels_0_be9fd2a0cd31c58a9032.jpg", "media/images/Labels_0_711f8ca66345ec4a98dd.jpg"], "captions": ["labels.jpg", "labels_correlogram.jpg"]}, "Mosaics": {"_type": "images/separated", "width": 1920, "height": 1920, "format": "jpg", "count": 3, "filenames": ["media/images/Mosaics_0_b72a3d833cbc210cb530.jpg", "media/images/Mosaics_0_f02d63b0084c2d5c5f0a.jpg", "media/images/Mosaics_0_d3545c915509632cd7f9.jpg"], "captions": ["train_batch0.jpg", "train_batch1.jpg", "train_batch2.jpg"]}, "train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'wandb-history.jsonl': {'offset': 9, 'content': ['{"train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'output.log': {'offset': 81, 'content': ['ERROR 2023-04-25T11:47:38.715815        9/99      1.11G    0.04901   0.006177          0          7        640: 100%|██████████| 119/119 [00:24<00:00,  4.91it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                  Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 8/8 [00:01<00:00,  6.61it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                    all        119        119      0.289      0.378      0.183     0.0566\n', 'ERROR 2023-04-25T11:47:40.731648       Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size\n', 'ERROR 2023-04-25T11:47:44.750799       10/99      1.11G      0.051    0.00633          0         10        640:  22%|██▏       | 26/119 [00:05<00:18,  5.14it/s]\n']}}, 'dropped': 0}}
+2023-04-25 19:50:17,562 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:50:22,593 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:50:27,624 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:50:32,651 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:50:36,686 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:50:37,694 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:50:42,738 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:50:47,762 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:50:52,789 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:50:57,810 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:51:02,362 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:51:02,837 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:51:07,855 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:51:12,877 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:51:17,912 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:51:17,912 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:51:22,938 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:51:27,971 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:51:28,456 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:51:33,018 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:51:38,062 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:51:43,112 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:51:48,132 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:51:53,150 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:51:54,282 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:51:58,178 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:52:03,211 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:52:08,253 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:52:13,286 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:52:18,326 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:52:20,032 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:52:23,351 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:52:28,377 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:52:33,405 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:52:38,429 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:52:43,459 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:52:45,186 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:52:48,486 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:52:51,111 WARNING FileStreamThread:1784 [file_stream.py:request_with_retry():670] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/w2y/yolo_test/y2g20nzg/file_stream (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))). func: <bound method Session.post of <requests.sessions.Session object at 0x000001EC0CCCA940>>, args: ('https://api.wandb.ai/files/w2y/yolo_test/y2g20nzg/file_stream',), kwargs: {'json': {'files': {'wandb-summary.json': {'offset': 0, 'content': ['{"best/epoch": 9, "best/precision": 0.2887204822688693, "best/recall": 0.37815126050420167, "best/mAP_0.5": 0.1825182716236059, "best/mAP_0.5:0.95": 0.05660377005368152, "Labels": {"_type": "images/separated", "width": 1600, "height": 1600, "format": "jpg", "count": 2, "filenames": ["media/images/Labels_0_be9fd2a0cd31c58a9032.jpg", "media/images/Labels_0_711f8ca66345ec4a98dd.jpg"], "captions": ["labels.jpg", "labels_correlogram.jpg"]}, "Mosaics": {"_type": "images/separated", "width": 1920, "height": 1920, "format": "jpg", "count": 3, "filenames": ["media/images/Mosaics_0_b72a3d833cbc210cb530.jpg", "media/images/Mosaics_0_f02d63b0084c2d5c5f0a.jpg", "media/images/Mosaics_0_d3545c915509632cd7f9.jpg"], "captions": ["train_batch0.jpg", "train_batch1.jpg", "train_batch2.jpg"]}, "train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'wandb-history.jsonl': {'offset': 9, 'content': ['{"train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'output.log': {'offset': 81, 'content': ['ERROR 2023-04-25T11:47:38.715815        9/99      1.11G    0.04901   0.006177          0          7        640: 100%|██████████| 119/119 [00:24<00:00,  4.91it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                  Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 8/8 [00:01<00:00,  6.61it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                    all        119        119      0.289      0.378      0.183     0.0566\n', 'ERROR 2023-04-25T11:47:40.731648       Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size\n', 'ERROR 2023-04-25T11:47:44.750799       10/99      1.11G      0.051    0.00633          0         10        640:  22%|██▏       | 26/119 [00:05<00:18,  5.14it/s]\n']}}, 'dropped': 0}}
+2023-04-25 19:52:53,507 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:52:58,536 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:53:03,563 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:53:08,589 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:53:09,899 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:53:13,616 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:53:18,639 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:53:23,663 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:53:28,699 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:53:33,724 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:53:35,252 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:53:38,770 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:53:43,809 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:53:48,844 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:53:53,897 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:53:58,935 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:54:00,742 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:54:03,975 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:54:09,025 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:54:14,050 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:54:19,085 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:54:24,142 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:54:26,175 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:54:29,203 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:54:34,229 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:54:39,273 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:54:44,301 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:54:49,322 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:54:51,928 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:54:54,366 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:54:59,388 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:55:04,418 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:55:09,456 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:55:14,482 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:55:17,690 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:55:19,504 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:55:24,536 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:55:29,552 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:55:34,585 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:55:39,613 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:55:43,401 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:55:44,663 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:55:49,691 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:55:54,718 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:55:59,752 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:56:04,778 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:56:09,081 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:56:09,805 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:56:14,833 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:56:19,865 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:56:24,900 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:56:29,935 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:56:34,851 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 19:56:34,958 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:56:39,989 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:56:45,023 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:56:50,050 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:56:52,125 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-25 19:56:57,171 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:57:02,215 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:57:07,279 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:57:11,932 WARNING FileStreamThread:1784 [file_stream.py:request_with_retry():670] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/w2y/yolo_test/y2g20nzg/file_stream (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)'))). func: <bound method Session.post of <requests.sessions.Session object at 0x000001EC0CCCA940>>, args: ('https://api.wandb.ai/files/w2y/yolo_test/y2g20nzg/file_stream',), kwargs: {'json': {'files': {'wandb-summary.json': {'offset': 0, 'content': ['{"best/epoch": 9, "best/precision": 0.2887204822688693, "best/recall": 0.37815126050420167, "best/mAP_0.5": 0.1825182716236059, "best/mAP_0.5:0.95": 0.05660377005368152, "Labels": {"_type": "images/separated", "width": 1600, "height": 1600, "format": "jpg", "count": 2, "filenames": ["media/images/Labels_0_be9fd2a0cd31c58a9032.jpg", "media/images/Labels_0_711f8ca66345ec4a98dd.jpg"], "captions": ["labels.jpg", "labels_correlogram.jpg"]}, "Mosaics": {"_type": "images/separated", "width": 1920, "height": 1920, "format": "jpg", "count": 3, "filenames": ["media/images/Mosaics_0_b72a3d833cbc210cb530.jpg", "media/images/Mosaics_0_f02d63b0084c2d5c5f0a.jpg", "media/images/Mosaics_0_d3545c915509632cd7f9.jpg"], "captions": ["train_batch0.jpg", "train_batch1.jpg", "train_batch2.jpg"]}, "train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'wandb-history.jsonl': {'offset': 9, 'content': ['{"train/box_loss": 0.04900730773806572, "train/obj_loss": 0.006177274510264397, "train/cls_loss": 0.0, "metrics/precision": 0.2887204822688693, "metrics/recall": 0.37815126050420167, "metrics/mAP_0.5": 0.1825182716236059, "metrics/mAP_0.5:0.95": 0.05660377005368152, "val/box_loss": 0.04962568357586861, "val/obj_loss": 0.004969768226146698, "val/cls_loss": 0.0, "x/lr0": 0.009208000000000001, "x/lr1": 0.009208000000000001, "x/lr2": 0.009208000000000001, "_timestamp": 1682423258.7418387, "_runtime": 285.48168563842773, "_step": 9}']}, 'output.log': {'offset': 81, 'content': ['ERROR 2023-04-25T11:47:38.715815        9/99      1.11G    0.04901   0.006177          0          7        640: 100%|██████████| 119/119 [00:24<00:00,  4.91it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                  Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 8/8 [00:01<00:00,  6.61it/s]\n', 'ERROR 2023-04-25T11:47:40.731648                    all        119        119      0.289      0.378      0.183     0.0566\n', 'ERROR 2023-04-25T11:47:40.731648       Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size\n', 'ERROR 2023-04-25T11:47:44.750799       10/99      1.11G      0.051    0.00633          0         10        640:  22%|██▏       | 26/119 [00:05<00:18,  5.14it/s]\n']}}, 'dropped': 0}}
+2023-04-25 19:57:12,331 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:57:17,375 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:57:22,407 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:57:27,461 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:57:32,506 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:57:37,549 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:57:42,588 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:57:47,637 DEBUG   HandlerThread:1784 [handler.py:handle_request():144] handle_request: keepalive

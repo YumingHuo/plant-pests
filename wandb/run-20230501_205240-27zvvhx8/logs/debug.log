@@ -1,0 +1,89 @@
+2023-05-01 20:52:40,833 INFO    MainThread:2944 [wandb_setup.py:_flush():76] Configure stats pid to 2944
+2023-05-01 20:52:40,834 INFO    MainThread:2944 [wandb_setup.py:_flush():76] Loading settings from C:\Users\w2y\.config\wandb\settings
+2023-05-01 20:52:40,834 INFO    MainThread:2944 [wandb_setup.py:_flush():76] Loading settings from D:\FEIJIEJIE\yolov5\wandb\settings
+2023-05-01 20:52:40,834 INFO    MainThread:2944 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-05-01 20:52:40,834 INFO    MainThread:2944 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program': '.\\train.py'}
+2023-05-01 20:52:40,834 INFO    MainThread:2944 [wandb_setup.py:_flush():76] Applying login settings: {'login_timeout': 30}
+2023-05-01 20:52:40,834 INFO    MainThread:2944 [wandb_init.py:_log_setup():506] Logging user logs to D:\FEIJIEJIE\yolov5\wandb\run-20230501_205240-27zvvhx8\logs\debug.log
+2023-05-01 20:52:40,834 INFO    MainThread:2944 [wandb_init.py:_log_setup():507] Logging internal logs to D:\FEIJIEJIE\yolov5\wandb\run-20230501_205240-27zvvhx8\logs\debug-internal.log
+2023-05-01 20:52:40,834 INFO    MainThread:2944 [wandb_init.py:init():546] calling init triggers
+2023-05-01 20:52:40,834 INFO    MainThread:2944 [wandb_init.py:init():552] wandb.init called with sweep_config: {}
+config: {'weights': '.\\weights\\yolov5n.pt', 'cfg': '.\\models\\yolov5n_w2y.yaml', 'data': '.\\data\\coco128_w2y.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.01, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0, 'copy_paste': 0.0}, 'epochs': 120, 'batch_size': 8, 'imgsz': 640, 'rect': False, 'resume': False, 'nosave': False, 'noval': False, 'noautoanchor': False, 'noplots': False, 'evolve': None, 'bucket': '', 'cache': None, 'image_weights': False, 'device': '', 'multi_scale': False, 'single_cls': False, 'optimizer': 'SGD', 'sync_bn': False, 'workers': 1, 'project': 'yolo_test', 'name': '5n_0510_1', 'exist_ok': False, 'quad': False, 'cos_lr': False, 'label_smoothing': 0.0, 'patience': 100, 'freeze': [0], 'save_period': -1, 'seed': 0, 'local_rank': -1, 'entity': None, 'upload_dataset': False, 'bbox_interval': -1, 'artifact_alias': 'latest', 'save_dir': 'yolo_test\\5n_0510_1'}
+2023-05-01 20:52:40,834 INFO    MainThread:2944 [wandb_init.py:init():602] starting backend
+2023-05-01 20:52:40,834 INFO    MainThread:2944 [wandb_init.py:init():606] setting up manager
+2023-05-01 20:52:40,836 INFO    MainThread:2944 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2023-05-01 20:52:40,838 INFO    MainThread:2944 [wandb_init.py:init():613] backend started and connected
+2023-05-01 20:52:40,839 INFO    MainThread:2944 [wandb_init.py:init():701] updated telemetry
+2023-05-01 20:52:40,841 INFO    MainThread:2944 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2023-05-01 20:52:42,259 INFO    MainThread:2944 [wandb_run.py:_on_init():2133] communicating current version
+2023-05-01 20:52:47,268 INFO    MainThread:2944 [wandb_run.py:_on_init():2142] got version response 
+2023-05-01 20:52:47,268 INFO    MainThread:2944 [wandb_init.py:init():789] starting run threads in backend
+2023-05-01 20:52:47,886 INFO    MainThread:2944 [wandb_run.py:_console_start():2114] atexit reg
+2023-05-01 20:52:47,886 INFO    MainThread:2944 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-05-01 20:52:47,886 INFO    MainThread:2944 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-05-01 20:52:47,886 INFO    MainThread:2944 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-05-01 20:52:47,887 INFO    MainThread:2944 [wandb_init.py:init():831] run started, returning control to user process
+2023-05-01 22:34:52,918 INFO    MainThread:2944 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connection.py", line 369, in connect
+    self.sock = conn = self._connect_tls_proxy(hostname, conn)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connection.py", line 504, in _connect_tls_proxy
+    socket = ssl_wrap_socket(
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\util\ssl_.py", line 453, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\util\ssl_.py", line 495, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock)
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1131)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\apis\public.py", line 251, in execute
+    return self._client.execute(*args, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\transport\requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\adapters.py", line 563, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+2023-05-01 22:35:24,191 INFO    MainThread:2944 [wandb_run.py:_finish():1854] finishing run w2y/yolo_test/27zvvhx8
+2023-05-01 22:35:24,191 INFO    MainThread:2944 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-05-01 22:35:24,191 INFO    MainThread:2944 [wandb_run.py:_restore():2066] restore
+2023-05-01 22:35:24,191 INFO    MainThread:2944 [wandb_run.py:_restore():2072] restore done
+2023-05-02 00:02:44,630 INFO    MainThread:2944 [wandb_run.py:_footer_history_summary_info():3422] rendering history
+2023-05-02 00:02:44,631 INFO    MainThread:2944 [wandb_run.py:_footer_history_summary_info():3454] rendering summary
+2023-05-02 00:02:44,635 INFO    MainThread:2944 [wandb_run.py:_footer_sync_info():3380] logging synced files

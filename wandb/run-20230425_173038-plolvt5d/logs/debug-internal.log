@@ -1,0 +1,220 @@
+2023-04-25 17:30:38,763 INFO    StreamThr :10628 [internal.py:wandb_internal():87] W&B internal server running at pid: 10628, started at: 2023-04-25 17:30:38.763749
+2023-04-25 17:30:38,764 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: status
+2023-04-25 17:30:38,777 INFO    WriterThread:10628 [datastore.py:open_for_write():85] open: D:\FEIJIEJIE\yolov5\wandb\run-20230425_173038-plolvt5d\run-plolvt5d.wandb
+2023-04-25 17:30:38,777 DEBUG   SenderThread:10628 [sender.py:send():336] send: header
+2023-04-25 17:30:38,778 DEBUG   SenderThread:10628 [sender.py:send():336] send: run
+2023-04-25 17:30:38,786 INFO    SenderThread:10628 [sender.py:_maybe_setup_resume():722] checking resume status for None/yolo_test/plolvt5d
+2023-04-25 17:30:42,261 INFO    SenderThread:10628 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connection.py", line 369, in connect
+    self.sock = conn = self._connect_tls_proxy(hostname, conn)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connection.py", line 504, in _connect_tls_proxy
+    socket = ssl_wrap_socket(
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\util\ssl_.py", line 453, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\util\ssl_.py", line 495, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock)
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1131)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\sdk\internal\internal_api.py", line 243, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\transport\requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\adapters.py", line 563, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+2023-04-25 17:30:43,830 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 17:30:48,864 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 17:30:53,913 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 17:30:58,957 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 17:31:04,004 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 17:31:09,049 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 17:31:14,089 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 17:31:15,943 INFO    SenderThread:10628 [dir_watcher.py:__init__():219] watching files in: D:\FEIJIEJIE\yolov5\wandb\run-20230425_173038-plolvt5d\files
+2023-04-25 17:31:15,943 INFO    SenderThread:10628 [sender.py:_start_run_threads():1078] run started: plolvt5d with start time 1682415038.764749
+2023-04-25 17:31:15,944 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:31:15,946 DEBUG   SenderThread:10628 [sender.py:send_request():363] send_request: summary_record
+2023-04-25 17:31:15,947 INFO    SenderThread:10628 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-25 17:31:15,951 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: check_version
+2023-04-25 17:31:15,951 DEBUG   SenderThread:10628 [sender.py:send_request():363] send_request: check_version
+2023-04-25 17:31:16,785 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: run_start
+2023-04-25 17:31:16,805 DEBUG   HandlerThread:10628 [system_info.py:__init__():31] System info init
+2023-04-25 17:31:16,805 DEBUG   HandlerThread:10628 [system_info.py:__init__():46] System info init done
+2023-04-25 17:31:16,805 INFO    HandlerThread:10628 [system_monitor.py:start():183] Starting system monitor
+2023-04-25 17:31:16,805 INFO    SystemMonitor:10628 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-04-25 17:31:16,806 INFO    HandlerThread:10628 [system_monitor.py:probe():204] Collecting system info
+2023-04-25 17:31:16,809 INFO    SystemMonitor:10628 [interfaces.py:start():187] Started cpu monitoring
+2023-04-25 17:31:16,809 INFO    SystemMonitor:10628 [interfaces.py:start():187] Started disk monitoring
+2023-04-25 17:31:16,809 INFO    SystemMonitor:10628 [interfaces.py:start():187] Started gpu monitoring
+2023-04-25 17:31:16,813 INFO    SystemMonitor:10628 [interfaces.py:start():187] Started memory monitoring
+2023-04-25 17:31:16,820 INFO    SystemMonitor:10628 [interfaces.py:start():187] Started network monitoring
+2023-04-25 17:31:16,827 DEBUG   HandlerThread:10628 [system_info.py:probe():195] Probing system
+2023-04-25 17:31:16,827 DEBUG   HandlerThread:10628 [git.py:repo():40] git repository is invalid
+2023-04-25 17:31:16,827 DEBUG   HandlerThread:10628 [system_info.py:probe():240] Probing system done
+2023-04-25 17:31:16,827 DEBUG   HandlerThread:10628 [system_monitor.py:probe():213] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.8.16', 'heartbeatAt': '2023-04-25T09:31:16.827785', 'startedAt': '2023-04-25T09:30:38.755742', 'docker': None, 'cuda': None, 'args': ('--data', '.\\data\\coco128_w2y.yaml', '--cfg', '.\\models\\yolov5n_w2y.yaml', '--weights', '.\\weights\\yolov5n.pt', '--batch-size', '12', '--epochs', '120', '--workers', '1', '--name', 'feijiejie_v5n', '--project', 'yolo_test'), 'state': 'running', 'program': '.\\train.py', 'codePath': 'train.py', 'host': 'C21', 'username': 'w2y', 'executable': 'D:\\Miniconda3\\envs\\torch_gpu\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3501.0, 'min': 0.0, 'max': 3501.0}, 'cpu_freq_per_core': [{'current': 3501.0, 'min': 0.0, 'max': 3501.0}], 'disk': {'total': 265.75976181030273, 'used': 51.578948974609375}, 'gpu': 'NVIDIA GeForce RTX 3070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3070', 'memory_total': 8589934592}], 'memory': {'total': 15.927337646484375}}
+2023-04-25 17:31:16,828 INFO    HandlerThread:10628 [system_monitor.py:probe():214] Finished collecting system info
+2023-04-25 17:31:16,828 INFO    HandlerThread:10628 [system_monitor.py:probe():217] Publishing system info
+2023-04-25 17:31:16,828 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-04-25 17:31:16,828 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-25 17:31:16,828 DEBUG   HandlerThread:10628 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-04-25 17:31:16,948 INFO    Thread-13 :10628 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_173038-plolvt5d\files\requirements.txt
+2023-04-25 17:31:16,948 INFO    Thread-13 :10628 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_173038-plolvt5d\files\conda-environment.yaml
+2023-04-25 17:31:16,948 INFO    Thread-13 :10628 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_173038-plolvt5d\files\wandb-summary.json
+2023-04-25 17:31:17,419 DEBUG   HandlerThread:10628 [system_info.py:_save_conda():86] Saving conda packages done
+2023-04-25 17:31:17,420 INFO    HandlerThread:10628 [system_monitor.py:probe():219] Finished publishing system info
+2023-04-25 17:31:17,431 DEBUG   SenderThread:10628 [sender.py:send():336] send: files
+2023-04-25 17:31:17,431 INFO    SenderThread:10628 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-04-25 17:31:17,438 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 17:31:17,439 DEBUG   SenderThread:10628 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 17:31:17,822 DEBUG   SenderThread:10628 [sender.py:send():336] send: telemetry
+2023-04-25 17:31:17,962 INFO    Thread-13 :10628 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_173038-plolvt5d\files\conda-environment.yaml
+2023-04-25 17:31:17,963 INFO    Thread-13 :10628 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_173038-plolvt5d\files\wandb-metadata.json
+2023-04-25 17:31:17,963 INFO    Thread-13 :10628 [dir_watcher.py:_on_file_created():278] file/dir created: D:\FEIJIEJIE\yolov5\wandb\run-20230425_173038-plolvt5d\files\output.log
+2023-04-25 17:31:18,505 INFO    wandb-upload_0:10628 [upload_job.py:push():138] Uploaded file C:\Users\w2y\AppData\Local\Temp\tmpqoraso3iwandb\4ho6lxuf-wandb-metadata.json
+2023-04-25 17:31:19,972 INFO    Thread-13 :10628 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_173038-plolvt5d\files\output.log
+2023-04-25 17:31:21,082 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:31:21,991 INFO    Thread-13 :10628 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_173038-plolvt5d\files\output.log
+2023-04-25 17:31:26,021 INFO    Thread-13 :10628 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_173038-plolvt5d\files\output.log
+2023-04-25 17:31:26,832 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:31:31,851 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:31:32,457 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 17:31:32,458 DEBUG   SenderThread:10628 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 17:31:37,855 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:31:42,882 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:31:43,101 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:43,101 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:43,101 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:43,101 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:43,101 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:43,102 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:45,116 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:45,116 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:45,116 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:45,116 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:45,116 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:45,116 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:47,121 ERROR   gpu       :10628 [interfaces.py:aggregate():158] Failed to serialize metric: The operating system has blocked the request.
+2023-04-25 17:31:47,121 ERROR   gpu       :10628 [interfaces.py:aggregate():158] Failed to serialize metric: The operating system has blocked the request.
+2023-04-25 17:31:47,121 ERROR   gpu       :10628 [interfaces.py:aggregate():158] Failed to serialize metric: The operating system has blocked the request.
+2023-04-25 17:31:47,121 ERROR   gpu       :10628 [interfaces.py:aggregate():158] Failed to serialize metric: The operating system has blocked the request.
+2023-04-25 17:31:47,121 ERROR   gpu       :10628 [interfaces.py:aggregate():158] Failed to serialize metric: The operating system has blocked the request.
+2023-04-25 17:31:47,121 ERROR   gpu       :10628 [interfaces.py:aggregate():158] Failed to serialize metric: The operating system has blocked the request.
+2023-04-25 17:31:47,121 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:47,122 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:47,122 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:47,122 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:47,122 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:47,122 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:47,456 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 17:31:47,457 DEBUG   SenderThread:10628 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 17:31:48,879 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:31:49,131 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:49,131 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:49,131 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:49,131 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:49,131 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:49,131 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:50,155 INFO    Thread-13 :10628 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\FEIJIEJIE\yolov5\wandb\run-20230425_173038-plolvt5d\files\config.yaml
+2023-04-25 17:31:51,145 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:51,145 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:51,145 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:51,145 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:51,145 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:51,145 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:53,157 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:53,157 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:53,157 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:53,157 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:53,157 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:53,157 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:54,612 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:31:55,171 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:55,171 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:55,171 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:55,171 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:55,171 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:55,171 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:57,184 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:57,184 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:57,184 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:57,184 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:57,184 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:57,184 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:59,197 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:59,197 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:59,197 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:59,197 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:59,197 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:59,197 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:31:59,644 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:32:01,209 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:01,209 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:01,209 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:01,209 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:01,209 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:01,209 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:02,473 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 17:32:02,473 DEBUG   SenderThread:10628 [sender.py:send_request():363] send_request: stop_status
+2023-04-25 17:32:03,224 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:03,224 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:03,224 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:03,224 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:03,224 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:03,224 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:04,855 DEBUG   HandlerThread:10628 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:32:05,238 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:05,238 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:05,238 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:05,238 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:05,238 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:05,238 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:07,253 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:07,253 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:07,253 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:07,253 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:07,253 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:07,253 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:09,265 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:09,265 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:09,265 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:09,265 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:09,265 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.
+2023-04-25 17:32:09,265 ERROR   gpu       :10628 [interfaces.py:monitor():141] Failed to sample metric: The operating system has blocked the request.

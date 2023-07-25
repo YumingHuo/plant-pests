@@ -1,0 +1,41 @@
+Traceback (most recent call last):
+  File ".\train.py", line 640, in <module>
+    main(opt)
+  File ".\train.py", line 529, in main
+    train(opt.hyp, opt, device, callbacks)
+  File ".\train.py", line 112, in train
+    data_dict = data_dict or check_dataset(data)  # check if None
+  File "D:\CV_LEARN\实战项目6：YOLOv5工地防护检测\windows软件\yolov5\utils\general.py", line 518, in check_dataset
+    data = yaml_load(data)  # dictionary
+  File "D:\CV_LEARN\实战项目6：YOLOv5工地防护检测\windows软件\yolov5\utils\general.py", line 603, in yaml_load
+    return yaml.safe_load(f)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\yaml\composer.py", line 64, in compose_node
+    if self.check_event(AliasEvent):
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\yaml\parser.py", line 449, in parse_block_mapping_value
+    if not self.check_token(KeyToken, ValueToken, BlockEndToken):
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+    raise ScannerError("while scanning a simple key", key.mark,
+yaml.scanner.ScannerError: while scanning a simple key
+  in ".\data\coco128_w2y.yaml", line 18, column 1
+could not find expected ':'
+  in ".\data\coco128_w2y.yaml", line 19, column 1

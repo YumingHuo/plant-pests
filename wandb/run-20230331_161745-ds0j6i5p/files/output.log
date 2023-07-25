@@ -1,0 +1,51 @@
+
+Downloading https://ultralytics.com/assets/Arial.ttf to C:\Users\w2y\AppData\Roaming\Ultralytics\Arial.ttf...
+Traceback (most recent call last):
+  File "D:\Miniconda3\envs\torch_gpu\lib\urllib\request.py", line 1354, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "D:\Miniconda3\envs\torch_gpu\lib\http\client.py", line 1256, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\Miniconda3\envs\torch_gpu\lib\http\client.py", line 1302, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\Miniconda3\envs\torch_gpu\lib\http\client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\Miniconda3\envs\torch_gpu\lib\http\client.py", line 1011, in _send_output
+    self.send(msg)
+  File "D:\Miniconda3\envs\torch_gpu\lib\http\client.py", line 951, in send
+    self.connect()
+  File "D:\Miniconda3\envs\torch_gpu\lib\http\client.py", line 1425, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File ".\train.py", line 640, in <module>
+    main(opt)
+  File ".\train.py", line 529, in main
+    train(opt.hyp, opt, device, callbacks)
+  File ".\train.py", line 112, in train
+    data_dict = data_dict or check_dataset(data)  # check if None
+  File "D:\CV_LEARN\实战项目6：YOLOv5工地防护检测\windows软件\yolov5\utils\general.py", line 568, in check_dataset
+    check_font('Arial.ttf' if is_ascii(data['names']) else 'Arial.Unicode.ttf', progress=True)  # download fonts
+  File "D:\CV_LEARN\实战项目6：YOLOv5工地防护检测\windows软件\yolov5\utils\general.py", line 503, in check_font
+    torch.hub.download_url_to_file(url, str(file), progress=progress)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\torch\hub.py", line 437, in download_url_to_file
+    u = urlopen(req)
+  File "D:\Miniconda3\envs\torch_gpu\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Miniconda3\envs\torch_gpu\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "D:\Miniconda3\envs\torch_gpu\lib\urllib\request.py", line 542, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "D:\Miniconda3\envs\torch_gpu\lib\urllib\request.py", line 502, in _call_chain
+    result = func(*args)
+  File "D:\Miniconda3\envs\torch_gpu\lib\urllib\request.py", line 1397, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "D:\Miniconda3\envs\torch_gpu\lib\urllib\request.py", line 1357, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10054] 远程主机强迫关闭了一个现有的连接。>

@@ -1,0 +1,4 @@
+name: torch_gpu
+channels:
+  - defaults
+prefix: C:\Users\w2y\.conda\envs\torch_gpu

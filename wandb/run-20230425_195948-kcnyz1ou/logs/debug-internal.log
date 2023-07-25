@@ -1,0 +1,72 @@
+2023-04-25 19:59:48,505 INFO    StreamThr :8388 [internal.py:wandb_internal():87] W&B internal server running at pid: 8388, started at: 2023-04-25 19:59:48.504039
+2023-04-25 19:59:48,505 DEBUG   HandlerThread:8388 [handler.py:handle_request():144] handle_request: status
+2023-04-25 19:59:48,516 INFO    WriterThread:8388 [datastore.py:open_for_write():85] open: D:\FEIJIEJIE\yolov5\wandb\run-20230425_195948-kcnyz1ou\run-kcnyz1ou.wandb
+2023-04-25 19:59:48,517 DEBUG   SenderThread:8388 [sender.py:send():336] send: header
+2023-04-25 19:59:48,517 DEBUG   SenderThread:8388 [sender.py:send():336] send: run
+2023-04-25 19:59:48,526 INFO    SenderThread:8388 [sender.py:_maybe_setup_resume():722] checking resume status for None/yolo_test/kcnyz1ou
+2023-04-25 19:59:51,641 INFO    SenderThread:8388 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connection.py", line 369, in connect
+    self.sock = conn = self._connect_tls_proxy(hostname, conn)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connection.py", line 504, in _connect_tls_proxy
+    socket = ssl_wrap_socket(
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\util\ssl_.py", line 453, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\util\ssl_.py", line 495, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock)
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1131)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\sdk\internal\internal_api.py", line 243, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\transport\requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\adapters.py", line 563, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+2023-04-25 19:59:53,579 DEBUG   HandlerThread:8388 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 19:59:58,610 DEBUG   HandlerThread:8388 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 20:00:03,651 DEBUG   HandlerThread:8388 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 20:00:08,695 DEBUG   HandlerThread:8388 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 20:00:13,745 DEBUG   HandlerThread:8388 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 20:00:18,772 DEBUG   HandlerThread:8388 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 20:00:23,820 DEBUG   HandlerThread:8388 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 20:00:28,848 DEBUG   HandlerThread:8388 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 20:00:33,883 DEBUG   HandlerThread:8388 [handler.py:handle_request():144] handle_request: keepalive

@@ -1,0 +1,61 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.8.16",
+    "heartbeatAt": "2023-04-25T11:38:37.371274",
+    "startedAt": "2023-04-25T11:38:31.534122",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--data",
+        ".\\data\\coco128_w2y.yaml",
+        "--cfg",
+        ".\\models\\yolov5n_w2y.yaml",
+        "--weights",
+        ".\\weights\\yolov5n.pt",
+        "--batch-size",
+        "8",
+        "--epochs",
+        "100",
+        "--workers",
+        "0",
+        "--name",
+        "fjj_v5n",
+        "--project",
+        "yolo_test"
+    ],
+    "state": "running",
+    "program": ".\\train.py",
+    "codePath": "train.py",
+    "host": "C21",
+    "username": "w2y",
+    "executable": "D:\\Miniconda3\\envs\\torch_gpu\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3501.0,
+        "min": 0.0,
+        "max": 3501.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3501.0,
+            "min": 0.0,
+            "max": 3501.0
+        }
+    ],
+    "disk": {
+        "total": 265.75976181030273,
+        "used": 51.588687896728516
+    },
+    "gpu": "NVIDIA GeForce RTX 3070",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3070",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 15.927337646484375
+    }
+}

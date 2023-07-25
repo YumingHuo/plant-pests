@@ -1,0 +1,76 @@
+2023-03-31 16:25:35,967 INFO    StreamThr :6500 [internal.py:wandb_internal():87] W&B internal server running at pid: 6500, started at: 2023-03-31 16:25:35.963595
+2023-03-31 16:25:35,968 DEBUG   HandlerThread:6500 [handler.py:handle_request():144] handle_request: status
+2023-03-31 16:25:35,975 INFO    WriterThread:6500 [datastore.py:open_for_write():85] open: D:\CV_LEARN\实战项目6：YOLOv5工地防护检测\windows软件\yolov5\wandb\run-20230331_162535-40s7ktsd\run-40s7ktsd.wandb
+2023-03-31 16:25:35,975 DEBUG   SenderThread:6500 [sender.py:send():336] send: header
+2023-03-31 16:25:35,976 DEBUG   SenderThread:6500 [sender.py:send():336] send: run
+2023-03-31 16:25:35,985 INFO    SenderThread:6500 [sender.py:_maybe_setup_resume():722] checking resume status for None/yolo_test/40s7ktsd
+2023-03-31 16:25:39,485 INFO    SenderThread:6500 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connection.py", line 369, in connect
+    self.sock = conn = self._connect_tls_proxy(hostname, conn)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connection.py", line 504, in _connect_tls_proxy
+    socket = ssl_wrap_socket(
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\util\ssl_.py", line 453, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\util\ssl_.py", line 495, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock)
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "D:\Miniconda3\envs\torch_gpu\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1131)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\sdk\internal\internal_api.py", line 243, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\transport\requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Miniconda3\envs\torch_gpu\lib\site-packages\requests\adapters.py", line 563, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+2023-03-31 16:25:41,028 DEBUG   HandlerThread:6500 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-31 16:25:46,096 DEBUG   HandlerThread:6500 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-31 16:25:51,145 DEBUG   HandlerThread:6500 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-31 16:25:56,189 DEBUG   HandlerThread:6500 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-31 16:26:01,233 DEBUG   HandlerThread:6500 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-31 16:26:06,285 DEBUG   HandlerThread:6500 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-31 16:26:11,339 DEBUG   HandlerThread:6500 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-31 16:26:16,391 DEBUG   HandlerThread:6500 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-31 16:26:21,455 DEBUG   HandlerThread:6500 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-31 16:26:26,503 DEBUG   HandlerThread:6500 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-31 16:26:30,882 DEBUG   HandlerThread:6500 [handler.py:handle_request():144] handle_request: shutdown
+2023-03-31 16:26:30,882 INFO    HandlerThread:6500 [handler.py:finish():842] shutting down handler
+2023-03-31 16:26:31,558 INFO    WriterThread:6500 [datastore.py:close():298] close: D:\CV_LEARN\实战项目6：YOLOv5工地防护检测\windows软件\yolov5\wandb\run-20230331_162535-40s7ktsd\run-40s7ktsd.wandb

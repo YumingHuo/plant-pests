@@ -1,0 +1,11 @@
+Dataset not found , missing paths ['D:\\FEIJIEJIE\\LUNA16_1\\VOCdevkit\\VOC\\JPEGImages\\_val.txt']
+Traceback (most recent call last):
+  File ".\train.py", line 640, in <module>
+    main(opt)
+  File ".\train.py", line 529, in main
+    train(opt.hyp, opt, device, callbacks)
+  File ".\train.py", line 112, in train
+    data_dict = data_dict or check_dataset(data)  # check if None
+  File "D:\FEIJIEJIE\yolov5\utils\general.py", line 550, in check_dataset
+    raise Exception('Dataset not found ❌')
+Exception: Dataset not found ❌

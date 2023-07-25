@@ -1,0 +1,12 @@
+
+train: F:\fangzhi\datasets_1581\\images\\train
+val: F:\fangzhi\datasets_1581\\images\\val
+test: F:\fangzhi\datasets_1581\\images\\test  # test images (optional)
+# number of classes
+nc: 6
+
+#names: ['无疵点'，'破洞'，'水渍'，'油渍'，'污渍'，'三丝'，'结头'，'花板跳'，'百脚'，'毛粒'，'粗经' ，'松经'， '断经' ， '吊经 '，'粗维'，'纬缩' ，'浆斑'，'整经结' ，'星跳' ， '跳花'，'断氨纶'，'稀密档'， '浪纹档' ，'色差档'，'磨痕' ，'轧痕'， '修痕'，'烧毛痕'，'死皱' ，'云织'，'双纬'，'双经'， '跳纱'，'筘路' ，'纬纱不良 ']
+
+
+names: ['sewing print','stain','sewing','flaw','hole','burr']
+        #'16', '17',  '18', '19', '20']

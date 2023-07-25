@@ -1,0 +1,210 @@
+                 from  n    params  module                                  arguments
+  0                -1  1      1760  models.common.Conv                      [3, 16, 6, 2, 2]
+  1                -1  1      4672  models.common.Conv                      [16, 32, 3, 2]
+  2                -1  1      4800  models.common.C3                        [32, 32, 1]
+  3                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  4                -1  2     29184  models.common.C3                        [64, 64, 2]
+  5                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  6                -1  3    156928  models.common.C3                        [128, 128, 3]
+  7                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  8                -1  1    296448  models.common.C3                        [256, 256, 1]
+  9                -1  1    164608  models.common.SPPF                      [256, 256, 5]
+ 10                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 14                -1  1      8320  models.common.Conv                      [128, 64, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     22912  models.common.C3                        [128, 64, 1, False]
+ 18                -1  1     36992  models.common.Conv                      [64, 64, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1     74496  models.common.C3                        [128, 128, 1, False]
+ 21                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 24      [17, 20, 23]  1      8118  models.yolo.Detect                      [1, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [64, 128, 256]]
+YOLOv5n_w2y summary: 214 layers, 1765270 parameters, 1765270 gradients, 4.2 GFLOPs
+Transferred 342/349 items from weights\yolov5n.pt
+[34m[1mAMP: [39m[22mchecks passed
+[34m[1moptimizer:[39m[22m SGD(lr=0.01) with parameter groups 57 weight(decay=0.0), 60 weight(decay=0.00046875), 60 bias
+
+
+
+[34m[1mtrain: [39m[22mScanning D:\FEIJIEJIE\datasets\VOCdevkit\VOC\_train... 949 images, 0 backgrounds, 0 corrupt: 100%|██████████| 94
+[34m[1mtrain: [39m[22mNew cache created: D:\FEIJIEJIE\datasets\VOCdevkit\VOC\_train.cache
+
+[34m[1mval: [39m[22mScanning D:\FEIJIEJIE\datasets\VOCdevkit\VOC\_val... 119 images, 0 backgrounds, 0 corrupt: 100%|██████████| 119/11
+[34m[1mval: [39m[22mNew cache created: D:\FEIJIEJIE\datasets\VOCdevkit\VOC\_val.cache
+[34m[1mAutoAnchor: [39m[22m3.32 anchors/target, 1.000 Best Possible Recall (BPR). Current anchors are a good fit to dataset
+Plotting labels to yolo_test\base_n3\labels.jpg...
+Image sizes 640 train, 640 val
+Using 1 dataloader workers
+Logging results to [1myolo_test\base_n3
+Starting training for 120 epochs...
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+  0%|          | 0/80 [00:00<?, ?it/s].\train.py:323: FutureWarning: Non-finite norm encountered in torch.nn.utils.clip_grad_norm_; continuing anyway. Note that the default behavior will change in a future release to error out if a non-finite total norm is encountered. At that point, setting error_if_nonfinite=false will be required to retain the old behavior.
+  torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=10.0)  # clip gradients
+      0/119      1.25G      0.101    0.03304          0         19        640:   1%|▏         | 1/80 [00:04<06:21,  4.8.\train.py:323: FutureWarning: Non-finite norm encountered in torch.nn.utils.clip_grad_norm_; continuing anyway. Note that the default behavior will change in a future release to error out if a non-finite total norm is encountered. At that point, setting error_if_nonfinite=false will be required to retain the old behavior.
+  torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=10.0)  # clip gradients
+
+
+
+
+
+      0/119      1.47G     0.1132    0.01737          0          0        640: 100%|██████████| 80/80 [00:18<00:00,  4.
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 5/5 [00:00<0
+                   all        119        119    2.8e-05     0.0084   1.43e-05   1.43e-06
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+      1/119      1.55G    0.09645   0.007161          0          1        640: 100%|██████████| 80/80 [00:13<00:00,  6.
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 5/5 [00:00<0
+                   all        119        119   0.000336      0.101   0.000188   6.06e-05
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+      2/119      1.55G    0.08329   0.007622          0          3        640: 100%|██████████| 80/80 [00:13<00:00,  6.
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 5/5 [00:00<0
+                   all        119        119     0.0016      0.479    0.00611   0.000906
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+      3/119      1.55G    0.07026   0.008341          0          2        640: 100%|██████████| 80/80 [00:13<00:00,  6.
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 5/5 [00:00<0
+                   all        119        119    0.00224      0.672     0.0319    0.00621
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+      4/119      1.55G    0.06647   0.007978          0          1        640: 100%|██████████| 80/80 [00:13<00:00,  6.
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 5/5 [00:00<0
+                   all        119        119     0.0992     0.0756      0.034     0.0101
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+      5/119      1.55G    0.06187   0.007116          0          0        640: 100%|██████████| 80/80 [00:13<00:00,  6.
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 5/5 [00:00<0
+                   all        119        119      0.249      0.106      0.104     0.0356
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+      6/119      1.55G    0.05656   0.007032          0          1        640: 100%|██████████| 80/80 [00:13<00:00,  6.
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 5/5 [00:00<0
+                   all        119        119      0.161      0.193     0.0956     0.0268
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+      7/119      1.55G    0.05618   0.006804          0          1        640: 100%|██████████| 80/80 [00:13<00:00,  5.
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 5/5 [00:00<0
+                   all        119        119      0.248       0.23      0.171      0.063
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+      8/119      1.55G    0.05563   0.006682          0          3        640: 100%|██████████| 80/80 [00:13<00:00,  5.
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 5/5 [00:00<0
+                   all        119        119      0.384      0.261       0.21     0.0771
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+      9/119      1.55G    0.05313   0.006822          0          2        640: 100%|██████████| 80/80 [00:15<00:00,  5.
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 5/5 [00:00<0
+                   all        119        119      0.294      0.252      0.221      0.062
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+
+
+
+
+
+     10/119      1.55G    0.05534   0.006287          0          1        640: 100%|██████████| 80/80 [00:14<00:00,  5.
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 5/5 [00:00<0
+                   all        119        119      0.305      0.328      0.226     0.0918
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+     11/119      1.55G    0.05342   0.006541          0         19        640:  18%|█▊        | 14/80 [00:02<00:12,  5.
+     11/119      1.55G    0.05403   0.006578          0         19        640:  32%|███▎      | 26/80 [00:04<00:09,  5.
+     11/119      1.55G    0.05423   0.006623          0         13        640:  48%|████▊     | 38/80 [00:06<00:07,  5.
+     11/119      1.55G    0.05397   0.006488          0         16        640:  61%|██████▏   | 49/80 [00:08<00:05,  5.
+     11/119      1.55G    0.05447   0.006405          0         14        640:  76%|███████▋  | 61/80 [00:10<00:03,  5.
+     11/119      1.55G     0.0551   0.006454          0         21        640:  91%|█████████▏| 73/80 [00:12<00:01,  5.
+     12/119      1.55G    0.06375   0.007575          0         19        640:   0%|          | 0/80 [00:00<?, ?it/s]5.
+     12/119      1.55G     0.0556   0.006449          0         16        640:  16%|█▋        | 13/80 [00:02<00:11,  5.
+     12/119      1.55G     0.0544   0.006381          0         13        640:  31%|███▏      | 25/80 [00:04<00:09,  5.
+     12/119      1.55G    0.05536   0.006334          0         18        640:  40%|████      | 32/80 [00:05<00:08,  5.
+     12/119      1.55G    0.05507   0.006537          0         16        640:  56%|█████▋    | 45/80 [00:07<00:06,  5.
+     12/119      1.55G    0.05339   0.006372          0         16        640:  71%|███████▏  | 57/80 [00:09<00:03,  5.
+     12/119      1.55G    0.05201   0.006263          0         10        640:  86%|████████▋ | 69/80 [00:11<00:02,  5.
+     12/119      1.55G    0.05196   0.006505          0          4        640: 100%|██████████| 80/80 [00:13<00:00,  5.
+     13/119      1.55G    0.05605   0.006801          0         14        640:  11%|█▏        | 9/80 [00:01<00:12,  5.6
+     13/119      1.55G    0.05658   0.006775          0         18        640:  25%|██▌       | 20/80 [00:03<00:10,  5.
+     13/119      1.55G     0.0559   0.006569          0         17        640:  40%|████      | 32/80 [00:05<00:08,  5.
+     13/119      1.55G    0.05469   0.006327          0         15        640:  55%|█████▌    | 44/80 [00:07<00:06,  5.
+     13/119      1.55G    0.05316   0.006171          0         17        640:  69%|██████▉   | 55/80 [00:09<00:04,  5.
+     13/119      1.55G    0.05321   0.006055          0         17        640:  84%|████████▍ | 67/80 [00:11<00:02,  5.
+     13/119      1.55G    0.05238   0.006062          0         15        640:  99%|█████████▉| 79/80 [00:13<00:00,  5.
+     14/119      1.55G    0.04945   0.006027          0         13        640:  10%|█         | 8/80 [00:01<00:11,  6.3
+     14/119      1.55G    0.05299   0.005726          0         13        640:  25%|██▌       | 20/80 [00:03<00:10,  5.
+     14/119      1.55G    0.05299   0.005726          0         13        640:  25%|██▌       | 20/80 [00:03<00:10,  5.
+     14/119      1.55G    0.05299   0.005726          0         13        640:  25%|██▌       | 20/80 [00:03<00:10,  5.
+     14/119      1.55G    0.05299   0.005726          0         13        640:  25%|██▌       | 20/80 [00:03<00:10,  5.
+     14/119      1.55G    0.05299   0.005726          0         13        640:  25%|██▌       | 20/80 [00:03<00:10,  5.
+     14/119      1.55G    0.05299   0.005726          0         13        640:  25%|██▌       | 20/80 [00:03<00:10,  5.
+     14/119      1.55G    0.05299   0.005726          0         13        640:  25%|██▌       | 20/80 [00:03<00:10,  5.
+     15/119      1.55G     0.0526   0.005548          0         23        640:  14%|█▍        | 11/80 [00:01<00:11,  5.
+     15/119      1.55G     0.0526   0.005548          0         23        640:  14%|█▍        | 11/80 [00:01<00:11,  5.
+     15/119      1.55G     0.0526   0.005548          0         23        640:  14%|█▍        | 11/80 [00:01<00:11,  5.
+     15/119      1.55G     0.0526   0.005548          0         23        640:  14%|█▍        | 11/80 [00:01<00:11,  5.
+     15/119      1.55G     0.0526   0.005548          0         23        640:  14%|█▍        | 11/80 [00:01<00:11,  5.
+     15/119      1.55G     0.0526   0.005548          0         23        640:  14%|█▍        | 11/80 [00:01<00:11,  5.
+     15/119      1.55G     0.0526   0.005548          0         23        640:  14%|█▍        | 11/80 [00:01<00:11,  5.
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size:  14%|█▍        | 11/80 [00:01<00:11,  5.
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size:  14%|█▍        | 11/80 [00:01<00:11,  5.
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size:  14%|█▍        | 11/80 [00:01<00:11,  5.
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size:  14%|█▍        | 11/80 [00:01<00:11,  5.
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size:  14%|█▍        | 11/80 [00:01<00:11,  5.
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size:  14%|█▍        | 11/80 [00:01<00:11,  5.
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size:  14%|█▍        | 11/80 [00:01<00:11,  5.
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size:  14%|█▍        | 11/80 [00:01<00:11,  5.
+     17/119      1.55G     0.0549   0.005977          0         14        640:  11%|█▏        | 9/80 [00:01<00:12,  5.6
+     17/119      1.55G     0.0549   0.005977          0         14        640:  11%|█▏        | 9/80 [00:01<00:12,  5.6
+     17/119      1.55G     0.0549   0.005977          0         14        640:  11%|█▏        | 9/80 [00:01<00:12,  5.6
+     17/119      1.55G     0.0549   0.005977          0         14        640:  11%|█▏        | 9/80 [00:01<00:12,  5.6
+     17/119      1.55G     0.0549   0.005977          0         14        640:  11%|█▏        | 9/80 [00:01<00:12,  5.6
+     17/119      1.55G     0.0549   0.005977          0         14        640:  11%|█▏        | 9/80 [00:01<00:12,  5.6
+KeyboardInterruptdata_queue.get(timeout=timeout)ckages\torch\utils\data\dataloader.py", line 1186, in _next_data2,  5.6
+KeyboardInterruptdata_queue.get(timeout=timeout)ckages\torch\utils\data\dataloader.py", line 1186, in _next_data2,  5.6
